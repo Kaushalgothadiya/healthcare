@@ -127,23 +127,23 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"healthcare.tasks.all"
-# 	],
-# 	"daily": [
-# 		"healthcare.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"healthcare.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"healthcare.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"healthcare.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"healthcare.tasks.all"
+	# ],
+	"daily": [
+		"healthcare.healthcare.doctype.appointment_queue.appointment_queue.create_queue_for_today"
+	],
+	# "hourly": [
+	# 	"healthcare.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"healthcare.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"healthcare.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------
